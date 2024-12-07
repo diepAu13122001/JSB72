@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Internal CSS</title>
+
+    <!-- add internal CSS -->
+    <style>
+      body {
+        background-color: aquamarine;
+        display: flex;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      div {
+        width: 500px;
+        height: 500px;
+        background-color: blueviolet;
+        border: solid 2px black;
+        border-radius: 15px;
+        padding: 10px;
+      }
+
+      .left {
+        margin-right: 10px;
+        background-image: url(https://img.tripi.vn/cdn-cgi/image/width=700,height=700/https://gcs.tripi.vn/public-tripi/tripi-feed/img/474112kFm/hinh-anh-zata-lien-quan-cuc-cute_090842802.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .left:hover {
+        color: white;
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="left">this is a left box</div>
+    <div>this is a right box</div>
+  </body>
+</html>
