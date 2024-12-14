@@ -1,0 +1,60 @@
+.container {
+  background-color: antiquewhite;
+  margin: 10px;
+  padding: 10px;
+}
+
+.item {
+  font-size: larger;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid black;
+}
+
+#block {
+  display: block;
+  /* chinh duoc trai phai tren duoi */
+}
+
+#inline {
+  display: inline;
+  background-color: aqua;
+  /* inline: chi thay doi duoc trai - phai (margin) */
+  margin: 50px;
+  height: 100px;
+  width: 100px;
+}
+
+#inline-block > .item {
+  /* nam trong 1 hang, co the chinh tren duoi trai phai */
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+}
+
+#none {
+  /* an -> mat vi tri dung */
+  display: none;
+}
+
+#flex {
+  /* thu gon phan tu => uu tien de duoc trong 1 hang */
+  display: flex;
+  /* khong duoc xuong hang => tu dieu chinh kich thuoc cua phan tu */
+  flex-flow: row nowrap;
+  /* dao nguoc */
+  flex-flow: column-reverse;
+  /* duoc phep xuong hang */
+  flex-flow: column wrap;
+  /* canh theo chieu ngang */
+  justify-content: space-around;
+  /* canh theo chieu doc */
+  align-items: center;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 50px;
+}
