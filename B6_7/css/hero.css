@@ -1,51 +1,26 @@
 #hero {
-  width: 100%;
-  max-height: 670px;
-  overflow: hidden;
+  position: relative;
+  text-align: center;
+  color: white;
 }
+
 #hero img {
   width: 100%;
   height: auto;
-  z-index: -10;
-  position: absolute;
 }
 
-#hero .title {
-  font-size: 60px;
-  font-weight: 800;
-  max-width: 200px;
+.hero.title {
   position: absolute;
-  color: white;
-  top: 100px;
-  left: 100px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  font-weight: bold;
 }
 
-#hero_btn {
+.hero.btn {
   position: absolute;
-  left: 100px;
-  top: 380px;
-  z-index: 100;
-}
-
-@media only screen and (max-width: 768px) {
-  body {
-    overflow: hidden;
-  }
-
-  #hero img {
-    height: 100%;
-    width: auto;
-    object-fit: cover;
-    transform: translate(-40%, 0);
-  }
-
-  #hero .title {
-    font-size: 45px;
-    font-weight: 700;
-    top: 50%;
-  }
-
-  #hero_btn {
-    top: 72%;
-  }
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
